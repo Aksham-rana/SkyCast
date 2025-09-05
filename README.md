@@ -37,7 +37,7 @@ Weather-App/
 ## ⚙️ How to Run
 1. Clone this repository or download the ZIP.  
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/Aksham-rana/SkyCast
 Open the folder in your code editor.
 
 2. Open index.html in a browser.
