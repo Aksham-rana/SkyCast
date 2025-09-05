@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <p>Enter a city name to check the weather</p>
+
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city">
+      <button id="searchBtn">Submit</button>
+      <button id="locBtn">My Location</button>
+    </div>
+
+    <div id="loading" class="loading" style="display:none">Loading...</div>
+    <div id="errorBox" class="error" style="display:none"></div>
+
+    <div id="initial" class="initial">Search a city to see weather</div>
+
+    <div id="weatherContent" class="weather" style="display:none">
+      <img id="wIcon" src="" alt="weather icon">
+      <h2 id="cityName">City, Country</h2>
+      <p id="desc">Description</p>
+      <p><strong id="temp">--°C</strong></p>
+      <p>Feels like: <span id="feels">--°C</span></p>
+      <p>Humidity: <span id="hum">--%</span></p>
+      <p>Wind: <span id="wind">-- m/s</span></p>
+      <p>Pressure: <span id="press">-- hPa</span></p>
+      <p id="updatedAt">Last updated: --</p>
+      <p id="timezone">Timezone: --</p>
+    </div>
+
+    <h3>Hourly Forecast</h3>
+    <div id="forecast" class="forecast"></div>
+  </div>
+
+  <script src="Script/script.js"></script>
+</body>
+</html>
